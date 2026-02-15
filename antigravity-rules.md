@@ -8,7 +8,7 @@ The core challenge this app solves is **internet instability**. The cashier term
 ## 2. Tech Stack & Architecture
 * **Frontend Framework:** Next.js 15 (App Router strictly, no Pages router).
 * **Desktop Shell:** Electron (wraps the Next.js app for native hardware access).
-* **Electron Runtime Model:** Next.js runs as a **standalone server** (`output: 'standalone'` in `next.config.mjs`) inside Electron. Electron spawns a local Node.js server and loads `http://localhost:3000` in the BrowserWindow. This preserves Server Actions, SSR, and streaming — all running locally, no internet required.
+* **Electron Runtime Model:** Next.js runs as a **standalone server** (`output: 'standalone'` in `next.config.ts`) inside Electron. Electron spawns a local Node.js server and loads `http://localhost:3000` in the BrowserWindow. This preserves Server Actions, SSR, and streaming — all running locally, no internet required.
 * **Backend & Database:** Supabase (PostgreSQL, Auth, Real-time) — used for cloud sync and admin features. Not required for offline POS operations.
 * **State Management:** Zustand (for high-speed, local cart management) with `zustand/middleware` persist to IndexedDB for surviving app restarts.
 * **Offline Persistence:** IndexedDB (via Dexie.js) for queuing offline transactions. Offline sales are stored locally and synced to Supabase when connectivity is restored.
@@ -40,7 +40,7 @@ The core challenge this app solves is **internet instability**. The cashier term
 * **Styling:** Use Tailwind CSS for all styling. Use `clsx` and `tailwind-merge` for dynamic classes. Do not write custom CSS files unless absolutely necessary.
 
 ### Electron & Next.js Integration
-* **Build Output:** `next.config.mjs` MUST use `output: 'standalone'`. NEVER use `output: 'export'` — it disables Server Actions and SSR.
+* **Build Output:** `next.config.ts` MUST use `output: 'standalone'`. NEVER use `output: 'export'` — it disables Server Actions and SSR.
 * **Electron Main Process:** `electron/main.ts` spawns the Next.js standalone server as a child process, waits for it to be ready, then opens the BrowserWindow pointing to `http://localhost:3000`.
 * **IPC Bridge:** `electron/preload.ts` exposes a secure context bridge. React components communicate with hardware (printer, scanner) exclusively via `window.electronAPI` — never import Node.js modules directly in React.
 

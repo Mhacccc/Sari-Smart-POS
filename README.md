@@ -70,6 +70,6 @@ sari-smart-pos/
 │   ├── migrations/             # SQL schema versions (UUIDs for all PKs)
 │   └── seed.sql                # Dummy data for testing
 ├── .antigravity-rules          # AI Developer Context
-├── next.config.mjs             # Next.js standalone output settings for Electron
+├── next.config.ts              # Next.js standalone output settings for Electron
 └── tailwind.config.ts          # Tailwind theme and plugin setup
 ```

@@ -1,0 +1,3 @@
+-- Placeholder for initial migration
+-- Will be created in Phase 2 when setting up the Supabase schema
+-- All tables MUST use UUID primary keys (gen_random_uuid())

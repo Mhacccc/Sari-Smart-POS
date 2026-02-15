@@ -1,0 +1,8 @@
+/**
+ * Shared UI components directory.
+ *
+ * This folder holds complex, app-specific reusable components
+ * like ProductCard, CartSidebar, ReceiptPreview, etc.
+ *
+ * Shadcn primitives go in ../ui/ instead.
+ */
