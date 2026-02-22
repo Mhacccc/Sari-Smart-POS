@@ -1,6 +1,6 @@
-# 🏛️ Sari-Smart POS: Architecture & Directory Standards
+# 🏛️ SmarTindahan POS: Architecture & Directory Standards
 
-This document outlines the folder structure, naming conventions, and architectural rules for the Sari-Smart POS project. It ensures that the Next.js frontend, Electron backend, and Supabase integration remain scalable and clean.
+This document outlines the folder structure, naming conventions, and architectural rules for the SmarTindahan POS project. It ensures that the Next.js frontend, Electron backend, and Supabase integration remain scalable and clean.
 
 ## 🏗️ Runtime Architecture
 
@@ -31,7 +31,7 @@ Next.js runs as a **standalone server** inside Electron — not as a static expo
 We use a unified Next.js App Router workspace, tightly integrated with an Electron main process folder.
 
 ```text
-sari-smart-pos/
+smartindahan-pos/
 ├── electron/                   # Desktop OS & Hardware Layer
 │   ├── main.ts                 # Spawns Next.js server + opens BrowserWindow
 │   ├── preload.ts              # Secure IPC bridge (React <-> Node.js)

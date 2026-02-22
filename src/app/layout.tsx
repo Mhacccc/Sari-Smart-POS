@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Sari-Smart POS",
+  title: "SmarTindahan POS",
   description:
     "Offline-first Point of Sale and Inventory Management for sari-sari stores",
 };

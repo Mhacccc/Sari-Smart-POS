@@ -1,7 +1,7 @@
-# 🛒 Sari-Smart POS: AI Developer Context & Rules
+# 🛒 SmarTindahan POS: AI Developer Context & Rules
 
 ## 1. Project Overview
-You are assisting in building **Sari-Smart POS**, a modernized, offline-first Point of Sale (POS) and Inventory Management system designed specifically for Filipino sari-sari stores and local retail businesses. 
+You are assisting in building **SmarTindahan POS**, a modernized, offline-first Point of Sale (POS) and Inventory Management system designed specifically for Filipino sari-sari stores and local retail businesses. 
 
 The core challenge this app solves is **internet instability**. The cashier terminal must be able to process sales and add items to the cart with zero latency and without an active internet connection, syncing to the cloud only when the connection is restored.
 

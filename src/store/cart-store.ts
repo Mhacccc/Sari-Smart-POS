@@ -85,7 +85,7 @@ export const useCartStore = create<CartState>()(
             },
         }),
         {
-            name: "sari-smart-cart",
+            name: "smartindahan-cart",
             storage: createJSONStorage(() => localStorage),
             // NOTE: In Phase 4, this will migrate to IndexedDB via Dexie.js
             // for full offline persistence of the transaction queue.

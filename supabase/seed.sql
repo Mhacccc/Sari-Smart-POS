@@ -1,4 +1,4 @@
--- Sari-Smart POS: Seed Data
+-- SmarTindahan POS: Seed Data
 -- Dummy products for development and testing
 
 INSERT INTO products (id, name, barcode, price, cost, stock, category, is_active)

@@ -1,5 +1,5 @@
 /**
- * Sari-Smart POS — Business Domain Interfaces
+ * SmarTindahan POS — Business Domain Interfaces
  *
  * All shared TypeScript interfaces live here.
  * Supabase-generated types go in database.types.ts (via `npx supabase gen types`).
